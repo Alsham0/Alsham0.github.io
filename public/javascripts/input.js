@@ -12,7 +12,7 @@ function handleInput(inputFunction) {
 
     if(response.status == 'success') {
         var html = '';
-        html += 'I claim that, ' + response.result;
+        html += 'Afirmo que, ' + response.result;
         html += '<br>';
         for(var i = 0; i < response.story.length; i++) {
             html += response.story[i] + '<br>';
@@ -22,7 +22,7 @@ function handleInput(inputFunction) {
         $("#derivativeOutput").css("color","black");
         MathJax.Hub.Typeset();
     } else {
-        $('#derivativeOutput').append('Can\'t understand, sorry :( :(');
+        $('#derivativeOutput').append('No entendi :c');
         $("#derivativeOutput").css("font-size","100%");
         $("#derivativeOutput").css("color","red");
     }
